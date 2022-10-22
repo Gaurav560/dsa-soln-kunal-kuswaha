@@ -1,15 +1,13 @@
-package com.kunalKushwaha.in;
-
 import java.util.Scanner;
 
 public class q2_solution {
     public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
-        System.out.print("please enter the first number:");
-    int num1= sc.nextInt();
-        System.out.print("please enter the second number:");
-        int num2= sc.nextInt();
-        int add=num1+num2;
-        System.out.println("the sum of both the numbers is : " +add);
+        Scanner sc=new Scanner(System.in);
+        System.out.println("please enter the name from which u want to print the greeting message:");
+        String name=sc.nextLine();
+        System.out.println(" Dear " + name + " this is to greet to you that u have qualified our selection process" +
+                "and we are delighted to present u an offer of 16 lpa + 2 lakhs of joining bonus and 2 lakhs of  relocation and gadget reimbursement " +
+                "hope this email finds you well.");
+
     }
 }

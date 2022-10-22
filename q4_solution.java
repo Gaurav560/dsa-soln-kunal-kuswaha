@@ -1,24 +1,35 @@
-package com.kunalKushwaha.in;
-
 import java.util.Scanner;
 
 public class q4_solution {
+
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
-        System.out.println("enter number 1: ");
-        int num1=sc.nextInt();
-        System.out.println("enter number 2: ");
-        int num2=sc.nextInt();
-        int gcd=1;
-        int min=num1>num2?num2:num1;
-        for (int i=1; i<=min; i++) {
-            if (num1%i==0 && num2%i==0){
-                gcd=i;
-            }
-        } System.out.println("gcd of both the numbers is "+gcd);
+        System.out.println("enter the first number");
+        float num1=sc.nextInt();
+        System.out.println("enter the second number");
+        float num2=sc.nextInt();
+        System.out.println("press 1 for addtion,2 for multiplication ,3 for division,4 for subtraction");
+        int entry=sc.nextInt();
+        int add=1;
+        int mul=2;
+        int divide=3;
+        int subtract=4;
 
-        double lcm=1;
-        lcm=(num1*num2)/gcd;
-        System.out.println("lcm of both the numbers is: "+lcm);
+        if(entry==1){
+            System.out.println("the addition of both the numbers is " + (num1+num2));
+        }
+         if (entry==2){
+            System.out.println("the multiplication of both the numbers is"+(num1*num2));
+        }
+         if (entry==3) {
+            System.out.println("the division of both the numbers is "+(num1/num2));}
+         if(entry==4){
+          //   int sub=num2-num1;
+             System.out.println("the subtraction is"+(num1-num2));
+         }
+
+
+
+
     }
 }
